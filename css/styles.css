@@ -7,6 +7,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -86,6 +88,16 @@ a {
   background-color: #404bbf;
 }
 
+.advantages-title-main {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
 .advantages-title {
   font-weight: 500;
   font-size: 20px;
@@ -115,7 +127,7 @@ a {
 }
 
 .team-item {
-  background-color: #ffffff; /
+  background-color: #ffffff;
 }
 
 .team-name {
@@ -145,7 +157,7 @@ a {
 }
 
 .portfolio-item {
-  border: 1px solid #e7e9fc; 
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-item-title {
@@ -171,17 +183,4 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
