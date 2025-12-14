@@ -1,143 +1,48 @@
-/* 
-  ===== ОСНОВНІ СТИЛІ =====
-  Стилі для всього документа
-*/
 body {
-  /* Шрифт для всього тексту */
   font-family: 'Roboto', sans-serif;
-  /* Колір тексту за замовчуванням */
   color: #434455;
-  /* Колір фону сторінки */
-  background-color: #ffffff;
-  /* Видаляємо стандартні відступи браузера */
-  margin: 0;
+  background-color: #fff;
 }
 
-/* 
-  ===== СКИДАННЯ СТИЛІВ =====
-  Видаляємо стандартне оформлення списків
-*/
 ul,
 ol {
-  /* Прибираємо маркери/номери списків */
   list-style-type: none;
-  /* Видаляємо зовнішні відступи */
-  margin: 0;
-  /* Видаляємо внутрішні відступи */
-  padding: 0;
 }
 
-/* 
-  Стилі для всіх посилань
-*/
 a {
-  /* Прибираємо підкреслення */
   text-decoration: none;
-  /* Колір наслідується від батьківського елемента */
-  color: inherit;
 }
 
-
-/* 
-  ===== ЛОГОТИП =====
-*/
 .logo {
-  /* Шрифт для логотипу */
   font-family: 'Raleway', sans-serif;
-  /* Товщина шрифту (жирний) */
   font-weight: 700;
-  /* Розмір шрифту */
   font-size: 18px;
-  /* Висота рядка (1.17 означає 117% від розміру шрифту) */
   line-height: 1.17;
-  /* Відстань між літерами */
   letter-spacing: 0.03em;
-  /* Всі літери великі */
   text-transform: uppercase;
-  /* Основний колір логотипу */
   color: #4d5ae5;
 }
 
-/* 
-  Частина логотипу в хедері (слово "Studio")
-*/
 .header-logo .logo-part {
-  color: #2e2f42; /* Темно-синій колір */
+  color: #2e2f42;
 }
 
-/* 
-  Частина логотипу в футері (слово "Studio")
-*/
 .footer-logo .logo-part {
-  color: #f4f4fd; /* Світлий колір для темного фону */
+  color: #f4f4fd;
 }
 
-/* 
-  ===== ШАПКА САЙТУ =====
-*/
-.page-header {
-  /* Лінія під шапкою */
- 
-}
-
-/* 
-  Навігація в шапці
-*/
-.header-nav {
-
-}
-
-/* 
-  Список навігації
-*/
-.nav-list {
-  /* Горизонтальне розташування пунктів меню */
-
-  /* Відстань між пунктами меню */
-
-  /* Відступ зліва для відступу від логотипу */
-
-}
-
-/* 
-  Посилання в навігації
-*/
 .nav-link {
-  /* Напівжирний шрифт */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* Колір тексту */
   color: #2e2f42;
-  /* Внутрішні відступи зверху та знизу */
-  padding-top: 24px;
-  padding-bottom: 24px;
-  /* Робимо посилання блоком для кращого кліку */
-  display: block;
 }
 
-/* 
-  Контактна інформація в шапці
-*/
 .contacts {
-  /* Прибираємо курсив для address */
   font-style: normal;
-  /* Зміщуємо контакти праворуч */
-
 }
 
-/* 
-  Список контактів
-*/
-.contacts-list {
- 
-
-}
-
-/* 
-  Посилання контактів
-*/
 .contacts-link {
   font-size: 16px;
   line-height: 1.5;
@@ -145,10 +50,6 @@ a {
   color: #434455;
 }
 
-/* 
-  ЕФЕКТ ПРИ НАВЕДЕННІ МИШКОЮ (HOVER)
-  Зміна кольору при наведенні
-*/
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
@@ -156,259 +57,131 @@ a {
   color: #404bbf;
 }
 
-/* 
-  ===== ГЕРОЙ-СЕКЦІЯ =====
-  Головна секція з великим заголовком
-*/
 .hero {
-  /* Темний фон */
   background-color: #2e2f42;
-  /* Великі відступи зверху та знизу */
- 
-  /* Вирівнювання тексту по центру */
-  text-align: center;
 }
 
-/* 
-  Заголовок герой-секції
-*/
 .hero-title {
-  /* Дуже жирний заголовок */
   font-weight: 700;
-  /* Дуже великий розмір */
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  /* Білий текст на темному фоні */
-  color: #ffffff;
-  /* Обмежуємо ширину для кращої читабельності */
- 
-  /* Автоматичні відступи зліва/справа для центрування */
-  
-  /* Відступ знизу перед кнопкою */
- 
+  color: #fff;
 }
 
-/* 
-  Кнопка в герой-секції
-*/
-.hero-btn {
-  /* Наслідуємо шрифт від body */
-  font-family: inherit;
+.hero-button {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  /* Білий текст на кнопці */
-  color: #ffffff;
-  /* Синій фон кнопки */
+  color: #fff;
   background-color: #4d5ae5;
-  /* Прибираємо стандартну рамку кнопки */
- 
-  /* Закруглені кути */
-
-  /* Внутрішні відступи */
-  
-  /* Змінюємо курсор на "руку" при наведенні */
   cursor: pointer;
-  /* Мінімальна ширина кнопки */
- 
-  /* Плавна зміна кольору фону при наведенні */
-
 }
 
-/* 
-  Ефект при наведенні на кнопку
-*/
-.hero-btn:hover,
-.hero-btn:focus {
-  /* Темніший синій при наведенні */
+.hero-button:hover,
+.hero-button:focus {
   background-color: #404bbf;
 }
 
-/* 
-  ===== ОСНОВНІ СЕКЦІЇ =====
-  Загальні стилі для всіх секцій
-*/
-.section {
-  /* Великі відступи зверху та знизу секції */
-
+.advantages-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-/* 
-  Прихований заголовок (для доступності)
-  Використовується для заголовка "Our Features"
-*/
-.visually-hidden {
-  /* Виносимо за межі видимої області */
- 
+.advantages-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
-/* 
-  Заголовок секції (h2)
-*/
-.section-title {
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
   color: #2e2f42;
-  /* Великий відступ знизу перед контентом */
- 
-}
-
-/* 
-  ===== СЕКЦІЯ ОСОБЛИВОСТЕЙ =====
-*/
-.features-list {
-  /* Горизонтальне розташування карток */
-
-  /* Відстань між картками */
-
-}
-
-.features-item {
-  /* Кожна картка займає 1/4 ширини мінус відступи */
- 
-}
-
-.features-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  /* Невеликий відступ перед текстом */
- 
-}
-
-.features-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-/* 
-  ===== СЕКЦІЯ КОМАНДИ =====
-*/
-.team {
-  /* Сірий фон для секції команди */
-  background-color: #f4f4fd;
-}
-
-.team-list {
-  
 }
 
 .team-item {
-  /* Білий фон для картки */
- 
-  /* Закруглення тільки нижніх кутів */
-  
-  /* Тінь для 3D ефекту */
-
-  /* Ширина картки (4 в ряд) */
-
-  /* Обрізаємо зайве, якщо картка виходить за межі */
-
-}
-
-.team-card {
-  /* Внутрішні відступи для тексту */
-  
-  /* Вирівнювання тексту по центру */
-  text-align: center;
+  background-color: #ffffff; /
 }
 
 .team-name {
-  
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
 }
 
 .team-position {
-  
-}
-
-/* 
-  ===== СЕКЦІЯ ПОРТФОЛІО =====
-*/
-.portfolio-list {
-  /* Горизонтальне розташування з переносом на новий рядок */
-
-  /* Відстань між картками */
-  
-  /* Окремо вказуємо вертикальну відстань */
- 
-}
-
-.portfolio-item {
-  /* Ширина картки (3 в ряд) */
-  
-  /* Плавна зміна тіні при наведенні */
- 
-}
-
-/* 
-  Ефект при наведенні на картку портфоліо
-*/
-
-}
-
-.portfolio-card {
-  /* Внутрішні відступи */
-
-  /* Рамка навколо картки */
- 
-  /* Прибираємо верхню рамку (вона в зображення) */
-  
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+.portfolio-item {
+  border: 1px solid #e7e9fc; 
+}
+
+.portfolio-item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px;
 }
 
-.portfolio-text {
+.portfolio-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 
-/* 
-  ===== ПІДВАЛ САЙТУ (FOOTER) =====
-*/
 .page-footer {
-  /* Темний фон */
   background-color: #2e2f42;
-  /* Великі відступи */
- 
-}
-
-.footer-content {
-  /* Вертикальне розташування елементів */
-  
-}
-
-.footer-logo {
-  /* Робимо логотип блоком для margin */
-  display: inline-block;
-  /* Відступ знизу перед текстом */
-  margin-bottom: 16px;
 }
 
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* Світлий текст на темному фоні */
   color: #f4f4fd;
-  /* Обмежуємо ширину тексту */
- 
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
